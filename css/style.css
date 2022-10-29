@@ -214,3 +214,11 @@
 #box5 .thumb {
   background-image: url(img/image-daniel.jpg);
 }
+
+.disclaimer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
