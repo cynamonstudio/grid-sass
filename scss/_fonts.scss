@@ -1,0 +1,41 @@
+@font-face {
+    font-family: bold;
+    src: url("fonts/BarlowSemiCondensed-Regular.ttf");
+}
+
+@font-face {
+    font-family: light;
+    src: url("fonts/BarlowSemiCondensed-Regular.ttf");
+}
+
+
+.name{
+    font-family: bold;
+    font-size: .8rem;
+    letter-spacing: .5px;
+}
+
+.position{
+    font-family: light;
+    font-size: .8rem;
+    letter-spacing: .5px;
+    opacity: .6;
+}
+
+
+.main-text{
+    font-family: bold;
+    font-size: 1rem;
+    letter-spacing: .5px;
+    line-height: $main-line-height;
+    opacity: 1;
+
+}
+
+.reg-text{
+    font-family: light;
+    font-size: .7rem;
+    letter-spacing: 1px;
+    line-height: .9rem;
+    opacity: .8;
+}

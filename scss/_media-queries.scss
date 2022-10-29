@@ -1,0 +1,21 @@
+@media (max-width:700px) {
+    
+    .wrapper{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(5,auto) !important;
+     }
+
+
+ //EACH LOOP
+     
+ $boxes:(box1,box2,box3,box4,box5);
+
+ @each $box in $boxes{
+
+    ##{$box}{
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+ }
+}

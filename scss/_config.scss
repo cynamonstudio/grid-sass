@@ -1,0 +1,46 @@
+
+//ZMIENNE
+$content-width:1100px;
+$img-path:"img";
+$font-primary:white;
+$font-secondary:#525564;
+$separator-height:1rem;
+$main-line-height:1.3rem;
+
+
+//MIX-IN
+//FUNKCJA
+
+@function set-font-color( $color){
+ @if( lightness($color)>70){
+    @return #525564;
+ } @else {
+   @return #ffffff;
+ }
+
+}
+
+
+@mixin font-color-inside ($back-color) {
+    background-color: $back-color;
+    color: set-font-color($back-color);
+}
+
+//EACH LOOP
+
+$border-colors:(
+box1: #ff5757,
+box2:#0e58ed,
+box3:#57ff5a,
+box4:#a357ff,
+box5:#0eb3ff
+);
+
+@each $name,$border in $border-colors{
+    ##{$name}{
+            .thumb{
+                border: solid 3px $border;
+            }
+    };
+};
+

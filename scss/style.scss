@@ -1,0 +1,103 @@
+@import "config";
+@import "boxes";
+@import "fonts";
+@import "media-queries";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.separator{
+    height: $separator-height;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.wrapper{
+   width: 100%;
+   max-width: $content-width;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: repeat(2,1fr);
+   grid-gap: 1rem;
+}
+
+
+.main-text-container{
+    min-height: $main-line-height*3;
+    display: flex;
+    align-items: flex-end;
+}
+
+#box1{
+    grid-column: 1 / span 2;
+    @include font-color-inside(#733fc8);
+    .thumb{
+
+        @extend .thumbnail;
+        background-image: url(#{$img-path}/image-daniel.jpg);
+    
+    }
+}
+
+#box2{
+    grid-column: 3 / span 1;
+    @include font-color-inside(#49556b);
+
+    .thumb{
+        @extend .thumbnail;
+        background-image: url(#{$img-path}/image-daniel.jpg);
+       
+    }
+
+
+
+}
+
+#box3{
+    grid-column: 1 / span 1;
+    @include font-color-inside(#fdfdfd);
+
+    .thumb{
+        @extend .thumbnail;
+        background-image: url(#{$img-path}/image-daniel.jpg);
+       
+    }
+
+}
+
+
+#box4{
+    grid-column: 2 / span 2;
+    @include font-color-inside(#18202d);
+
+    .thumb{
+        @extend .thumbnail;
+        background-image: url(#{$img-path}/image-daniel.jpg);
+    }
+
+}
+
+
+#box5{
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 2 ;
+    @include font-color-inside(#ffffff);
+
+    .thumb{
+        @extend .thumbnail;
+        background-image: url(#{$img-path}/image-daniel.jpg);
+    }
+
+}
+
+
