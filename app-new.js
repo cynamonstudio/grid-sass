@@ -4,5 +4,5 @@ const elements = document.querySelector(".wrapper").children
 console.log(elements)
 
 for ( el of elements){
-    el.style.transform="scale(1.1)"
+    el.style.transform="scale(1.0)"
 }
